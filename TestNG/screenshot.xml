@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser" value="chrome" />
+	<parameter name="url"
+		value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+	<listeners>
+	<listener class-name="TestNG_Practice.BaseImpliment"/>
+	</listeners>
+	<test name="Test1">
+		<classes>
+			<class name="TestNG_Practice.BaseTestMethod">
+				<methods>
+					<include name="url" />
+					<include name="login" />
+					<include name="verifyProfileName" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+
+
+
