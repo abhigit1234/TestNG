@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TimeOuts_ExpectedExceptions">
+      <class name="TestNG.Assertions_soft_hard">
         <methods>
-          <include name="LoginPage"/>
+          <include name="loginpage"/>
         </methods>
-      </class> <!-- TestNG.TimeOuts_ExpectedExceptions -->
+      </class> <!-- TestNG.Assertions_soft_hard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
