@@ -12,13 +12,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class webTablePaginationWhileLoop {
 
 	@Test
 	public void test() throws InterruptedException {
-		WebDriverManager.chromedriver().setup();
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://datatables.net/examples/advanced_init/dt_events.html");

@@ -7,21 +7,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptException;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import org.testng.internal.invokers.AbstractParallelWorker.Arguments;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class webTablePagination_1 {
 
 	@Test
 	public void webtables() throws InterruptedException {
-		WebDriverManager.chromedriver().setup();
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://datatables.net/examples/advanced_init/dt_events.html");

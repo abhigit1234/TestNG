@@ -9,14 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class webtable_select_particularValue {
 	static WebDriver driver;
 
 	@Test
 	public void Login() throws InterruptedException {
-		WebDriverManager.chromedriver().setup();
+		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://datatables.net/examples/advanced_init/dt_events.html");
