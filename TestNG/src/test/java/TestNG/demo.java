@@ -1,9 +1,5 @@
 package TestNG;
 
-import static org.testng.Assert.assertEquals;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -14,22 +10,12 @@ public class demo{
 	public void launch() {
 		
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost:90/opencart/upload/admin");
+		System.out.println("abhilash babu durgumahanthi");
 		
-		driver.get("https://www.ebay.com");
-		driver.findElement(By.id("gh-ac")).sendKeys("samsung mobile",Keys.ENTER);
-		String act =  driver.findElement(By.name("_sacat")).getText();
-		String exp = "Cell Phones & Smartphones";
-		assertEquals(act,exp);
-		
-		String act1 = driver.findElement(By.id("gh-as-a")).getText();
-		String exp1 = "advanced";
-		assertEquals(act1, exp1);
-		driver.close();
-	
-		String act2 = driver.findElement(By.id("gh-p-2")).getText();
-		String exp2 = "Sell";
-		assertEquals(act2, exp2);
-	}
+
+}
 	
 	
 	
